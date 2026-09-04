@@ -45,8 +45,10 @@ def buscar_tema_por_id(id_tema):
     Busca un tema en la lista TEMAS por su id.
     Retorna el diccionario del tema o None si no existe.
     """
-    # Tu código acá
-    pass # remover pass, es solo un placeholder 
+    for tema in TEMAS: 
+        if tema["id_tema"] == id_tema:
+            return tema
+    return None
 
 
 def buscar_usuario_por_id(id_usuario):
