@@ -97,8 +97,12 @@ def validar_email(email):
 
     Métodos útiles: .strip(), 'in', .split(), .find()
     """
-    # Tu código acá
-    pass
+    email = email.strip()
+    if "@" not in email:
+        return False
+    posicion_arroba = email.find("@")
+    parte_despues_de_arroba = email[posicion_arroba:]
+    return "." in parte_despues_de_arroba
 
 
 # ── Operaciones CRUD ─────────────────────────────────────────────
