@@ -84,8 +84,10 @@ def validar_nombre(nombre):
 
     Métodos útiles: .strip(), .replace(), .isalpha()
     """
-    # Tu código acá
-    pass
+    nombre = nombre.strip()
+    if nombre == "":
+        return False
+    return nombre.replace(" ", "").isalpha()
 
 
 def validar_email(email):
