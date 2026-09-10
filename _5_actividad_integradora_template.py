@@ -56,8 +56,10 @@ def buscar_usuario_por_id(id_usuario):
     Busca un usuario en la lista 'usuarios' por su id.
     Retorna el diccionario del usuario o None si no existe.
     """
-    # Tu código acá
-    pass
+    for usuario in usuarios:
+        if usuario["id_usuario"] == id_usuario:
+            return usuario
+    return None
 
 
 # ============================================================
