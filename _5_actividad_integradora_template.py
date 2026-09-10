@@ -75,8 +75,7 @@ def validar_id_usuario(id_usuario):
 
     Métodos útiles: .isdigit()
     """
-    # Tu código acá
-    pass
+    return id_usuario.isdigit()
 
 def validar_nombre(nombre):
     """
