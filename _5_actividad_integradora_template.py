@@ -129,8 +129,11 @@ def crear_usuario():
         print("El nombre solo puede contener letras y espacios.")
         nombre = input("Nombre: ").strip()
 
-    # Tu código acá: solicitar y validar apellido
-    apellido = input("")
+    #solicitar y validar apellido
+    apellido = input("Apellido: ").strip()
+    while not validar_nombre(apellido):
+        print("El apellido solo puede contener letras y espacios.")
+        apellido = input("Apellido: ").strip()
 
     # Tu código acá: solicitar y validar email
     email = input("")
