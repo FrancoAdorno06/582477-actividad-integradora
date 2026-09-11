@@ -149,8 +149,9 @@ def crear_usuario():
         "email":      email,
     }
 
-    # Tu código acá: agregar a la lista 'usuarios'
-
+    #agregar a la lista 'usuarios'
+    usuarios.append(nuevo_usuario)
+    
     print("Usuario agregado exitosamente!")
 
 
