@@ -151,7 +151,7 @@ def crear_usuario():
 
     #agregar a la lista 'usuarios'
     usuarios.append(nuevo_usuario)
-    
+
     print("Usuario agregado exitosamente!")
 
 
@@ -165,7 +165,14 @@ def buscar_usuario_por_id():
     # Solicitar id_usuario para correr la búsqueda
     id_usuario = int(input("ID del usuario: "))
 
-    # Tu código acá: usar buscar_usuario_por_id()
+    #usar buscar_usuario_por_id()
+    usuario = buscar_usuario_por_id(id_usuario)
+    if usuario:
+        print(f"  ID: {usuario['id_usuario']}")
+        print(f"  Nombre: {usuario['nombre']} {usuario['apellido']}")
+        print(f"  Email: {usuario['email']}")
+    else:
+        print(f"No se encontró ningún usuario con id {id_usuario}.")
 
 
 def ver_usuarios():
