@@ -203,9 +203,9 @@ def eliminar_usuario():
         print(f"No se encontró ningún usuario con id {id_usuario}.")
         return
 
-    # Tu código acá: eliminar el usuario de la lista 'usuarios'
+    #eliminar el usuario de la lista 'usuarios'
     # Podés usar .remove() pasando el objeto, o .pop() con el índice
-
+    usuarios.remove(usuario)
 
     print(f"Usuario eliminado correctamente.")
 
